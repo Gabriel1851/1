@@ -31,15 +31,15 @@ function toggle_visibility(id) {
 function mineGold() {
   gameData.gold += gameData.goldPerClick
   gameData.goldTotal += gameData.goldPerClick
-  document.getElementById("goldMined").innerHTML = format(gameData.gold, "scientific") + " Gold Mined"
-  document.getElementById("goldTotal").innerHTML = format(gameData.goldTotal, "scientific") + " Total Gold Mined"
+  document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
+  document.getElementById("goldTotal").innerHTML = gameData.goldTotal + " Total Gold Mined"
 }
 
 function minerGold() {
   gameData.gold += gameData.minerPerClick * (diff / 1000)
   gameData.goldTotal += gameData.minerPerClick * (diff / 1000)
-  document.getElementById("goldMined").innerHTML = format(gameData.gold, "scientific") + " Gold Mined"
-  document.getElementById("goldTotal").innerHTML = format(gameData.goldTotal, "scientific") + " Total Gold Mined"
+    document.getElementById("goldMined").innerHTML = format(gameData.gold, "scientific") + " Gold Mined"
+    document.getElementById("goldTotal").innerHTML = format(gameData.goldTotal, "scientific") + " Total Gold Mined"
 }
 
 function buyMinerPerClick() {
