@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="miner.css">
+    <script src="miner.js" charset="utf-8" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="section1" style="max-width:500px;display:block;">
+      <div id="heading1" style="display:none"><h2>Currency counts</h2></div>
+      <p id="goldTotal">0 Total Gold Mined</p>
+      <p id="goldMined">0 Gold Mined</p>
+    </div>
+    <div id="line1" style="display:none;max-width:600px;"><hr></div>
+    <div id="section2" style="max-width:500px;display:block;">
+      <div id="heading2" style="display:none"><h2>Buttons</h2></div>
+      <div id="button2a" style="display:block">
+        <button onclick="mineGold()">Mine Gold</button><br />
+        <button onclick="buyMinerPerClick()">Hire miner</button>
+      </div>
+      <div id="button2b" style="display:none">
+        <button onclick="mineGold()" class="buttoncolor buttoncolor1">Mine Gold</button><br />
+        <button onclick="buyMinerPerClick()" class="buttoncolor buttoncolor1">Hire miner</button><br />
+      </div>
+      <p id="perClickUpgrade">Currently 0 miners. Another miner costs 10 Gold.</p>
+    </div>
+    <div id="line2" style="display:none;max-width:600px;"><hr></div>
+    <div id="section3" style="max-width:500px;display:block;">
+      <div id="heading3" style="display:none"><h2>Styling</h2></div>
+      <div id="button3a" style="display:block">
+        <button id="headingButton" onclick="visualBuy()" style="display:none">Include headings</button>
+        <button id="backgroundButton" onclick="visualBuy()" style="display:none">Colored sections</button>
+        <button id="lineButton" onclick="visualBuy()" style="display:none">Include lines</button>
+        <button id="buttonButton" onclick="visualBuy()" style="display:none">Pretty buttons</button>
+        <p>&nbsp;</p>
+      </div>
+      <div id="button3b" style="display:none">
+        <button class="buttoncolor buttoncolor1">Pretty buttons</button><br />
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div id="line3" style="display:none;max-width:600px;"><hr></div>
+    <div id="section4" style="max-width:500px;display:block;">
+      <div id="heading4" style="display:none"><h2>Other</h2></div>
+      <div id="button4a" style="display:block">
+        <button onclick="resetGame()">Reset game</button>
+        <p>&nbsp;</p>
+      </div>
+      <div id="button4b" style="display:none">
+        <button onclick="resetGame()" class="buttoncolor buttoncolor1">Reset game</button><br />
+        <p>&nbsp;</p>
+      </div>
+      <div id="epilogue" style="display:none">Having earnt 1,000,000 gold and finding no new content, you close the tab in disgust.</div>
+    </div>
+  </body>
+</html>
